@@ -72,3 +72,16 @@ input_data = pd.DataFrame([{
 }])
 
 # Fill missing columns with 0s
+# Fill any missing feature columns with 0
+for col in feature_names:
+    if col not in input_data.columns:
+        input_data[col] = 0
+
+# Reorder columns to match training data
+input_data = input_data[feature_names]
+
+# Add a predict button
+if st.button("🚀 Predict Price"):
+    log_price = model.predict(input_data)[0]
+    price = np.expm1(log_price)
+    st.subheader(f"💵 Estimated Nightly Price: ${price:.2f}")
