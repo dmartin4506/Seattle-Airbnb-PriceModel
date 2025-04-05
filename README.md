@@ -1,3 +1,6 @@
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://seattle-airbnb-pricemodel-hwfbymaq9c8dppk6kydjhc.streamlit.app)
+
+
 
 # 🏠 Airbnb Price Predictor – Seattle
 
