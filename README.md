@@ -6,7 +6,7 @@
 
 This project is a Streamlit-based interactive app that predicts nightly Airbnb prices in Seattle based on listing features like room type, number of beds, location, amenities, and more.
 
-## 🚀 Features
+## Features
 
 - Predicts nightly Airbnb prices using a trained XGBoost model
 - Interactive UI built with Streamlit
@@ -14,7 +14,7 @@ This project is a Streamlit-based interactive app that predicts nightly Airbnb p
 - One-hot encoded categorical features
 - Log-transformed price target for improved performance
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 airbnb-price-app/
@@ -26,7 +26,7 @@ airbnb-price-app/
 └── requirements.txt        # Python dependencies
 ```
 
-## ✅ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repo & Set Up the Environment
 
@@ -60,11 +60,11 @@ Instead, use:
 
 This ensures the app runs inside the virtual environment and avoids `ModuleNotFoundError`.
 
-## 🧠 Why This Matters
+## Why This Matters
 
 Using `python -m streamlit` guarantees that Streamlit runs with the virtual environment's `site-packages`, not your system or Anaconda environment.
 
-## 📊 Model Overview
+## Model Overview
 
 - Model: `XGBRegressor`
 - Training target: `log(price + 1)`
